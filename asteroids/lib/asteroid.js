@@ -9,7 +9,9 @@ function Asteroid(options) {
   const moArgs = { color: this.COLOR, 
     radius: this.RADIUS, 
     pos: options.pos, 
-    vel: Util.randomVec(Math.random()*10) };
+    vel: Util.randomVec(Math.random()*10),
+    game: options.game 
+  };
   
   MovingObject.call(this, moArgs);
   
